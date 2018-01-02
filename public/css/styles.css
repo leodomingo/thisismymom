@@ -1,0 +1,51 @@
+.first-name {
+    max-width: 15%;
+    padding: 25px;
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    z-index: 1000;
+}
+
+.last-name {
+    max-width: 40%;
+    padding: 25px;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    z-index: 1000;
+}
+
+.ma {
+    max-width: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.caption {
+    max-width: 7%;
+    position: fixed;
+    top: 65%;
+    left: 65%;
+}
+
+@media (max-width: 993px) {
+    .first-name {
+        max-width: 18%;
+        left: 35px;
+        top: 0;
+    }
+    .last-name {
+        max-width: 50%;
+        left: 35px;
+        top: 65px;
+    }
+    .ma {
+        max-width: 80%;
+        top: 180px;
+        transform: translate(-50%, 0);
+    }
+}
