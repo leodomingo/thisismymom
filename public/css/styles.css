@@ -1,3 +1,28 @@
+.panel {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.panel-inline {
+    position: relative;
+    display: inline;
+    margin: 0;
+}
+
+.panel-container {
+    overflow-x: scroll;
+    width: 10000px;
+    display: inline;
+}
+
+.side-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffb13;
+}
+
 .first-name {
     max-width: 15%;
     padding: 25px;
@@ -18,16 +43,17 @@
 
 .ma {
     max-width: 50%;
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+    font-size: 22px;
 }
 
 .caption {
     max-width: 7%;
-    position: fixed;
+    position: absolute;
     top: 65%;
     left: 65%;
 }
