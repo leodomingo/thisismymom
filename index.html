@@ -1,54 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Leo</title>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Leo</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts/velocity/velocity.min.js" type="text/javascript"></script>
+    <script src="js/runner.js" type="text/javascript"></script>
+</head>
 
-
-    </head>
-
-    <body>
-        <div class="container-fluid panel">
-            <img class="first-name" src="../img/leo_hand.png">
-            <img class="last-name" src="../img/dominguez_hand.png">
-            <img class="ma" src="../img/mafilm.jpg">
-            <img class="caption" src="../img/caption_white.png">
-            </img>
+<body style="border: solid #fffff3 15px;">
+    <div class="container-fluid panel">
+        <img class="draggable first-name" src="../img/leo_hand.png">
+        <img class="draggable last-name" src="../img/dominguez_hand.png">
+        <img class="draggable ma" src="../img/mafilm.jpg">
+        <div class="orb draggable "></div>
+        <div class="random">
+            Go ahead and drag some things around
         </div>
-        <div class="container-fluid panel">
-            <div class="ma">
-                Leo Dominguez is currently developing software for the Washington Post and studying at The University of Virginia.
-            </div>
-            <div class="ma">
-
-            </div>
-            </img>
+        <div class="right-menu draggable">
+            <div id="writing-button">writing</div>
+            <div id="code-button">code</div>
+            <div>photos</div>
+            <div>resume</div>
         </div>
-        <div class="container-fluid panel-container">
-            <div class="container-fluid panel-inline">
-                <div class="side-container">
-
-                </div>
-            </div>
-            <div class="container-fluid panel-inline">
-                <div class="side-container">
-
-                </div>
-            </div>
-            <div class="container-fluid panel-inline">
-                <div class="side-container">
-
-                </div>
-            </div>
-            <div class="container-fluid panel-inline">
-                <div class="side-container">
-
-                </div>
-            </div>
+    </div>
+    <div id="writing" class="container-fluid panel ">
+        <img class="draggable ma" src="http://d12b8ry2hpzpk0.cloudfront.net/laughing.jpg ">
+        <div class="article-caption draggable">
+            I wrote <a href="http://www.abcdmag.com/the-american-cousin">this short profile</a> of a University of Virginia student about finding comfort in a space that isn't your own.
         </div>
-    </body>
+    </div>
+    <div id="code" class="container-fluid panel">
+        <div class="article-caption draggable" style="text-align: left;">
+            I currently develop software for audio products at <a href="http://www.washingtonpost.com/podcasts">The Washington Post</a>. <br><br> This past year I built and designed a new online magazine for The Cavalier Daily called <a href="">The abcd Magazine</a><br><br>I've
+            worked in a variety of frameworks and disciplines <a href="http://www.github.com/leodomingo"> over the years.</a>
+
+        </div>
+    </div>
+</body>
 
 </html>

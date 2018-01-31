@@ -1,32 +1,7 @@
-.panel {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.panel-inline {
-    position: relative;
-    display: inline;
-    margin: 0;
-}
-
-.panel-container {
-    overflow-x: scroll;
-    width: 10000px;
-    display: inline;
-}
-
-.side-container {
-    width: 100vw;
-    height: 100vh;
-    background-color: #fffb13;
-}
-
 .first-name {
     max-width: 15%;
     padding: 25px;
-    position: fixed;
+    position: absolute;
     top: 10%;
     left: 15%;
     z-index: 1000;
@@ -35,7 +10,7 @@
 .last-name {
     max-width: 40%;
     padding: 25px;
-    position: fixed;
+    position: absolute;
     top: 20%;
     left: 15%;
     z-index: 1000;
@@ -44,10 +19,9 @@
 .ma {
     max-width: 50%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    left: 25%;
+    top: 27%;
+    z-index: 500;
     font-size: 22px;
 }
 
@@ -56,6 +30,51 @@
     position: absolute;
     top: 65%;
     left: 65%;
+    z-index: 1000;
+}
+
+.random {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+.right-menu {
+    text-align: right;
+    padding: 10px;
+    width: 15%;
+    height: 25%;
+    background-color: #fffb13;
+    z-index: 20;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}
+
+.article-caption-container {
+    padding: 25px;
+    height: 200px;
+}
+
+.article-caption {
+    text-align: right;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    width: 35%;
+    height: 40%;
+    background-color: #fffb13;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 25px;
+    z-index: 10;
+}
+
+.panel {
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    position: relative;
 }
 
 @media (max-width: 993px) {
