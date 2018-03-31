@@ -1,7 +1,7 @@
 .first-name {
     max-width: 15%;
     padding: 25px;
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 15%;
     z-index: 1000;
@@ -10,7 +10,7 @@
 .last-name {
     max-width: 40%;
     padding: 25px;
-    position: absolute;
+    position: fixed;
     top: 20%;
     left: 15%;
     z-index: 1000;
@@ -23,6 +23,12 @@
     top: 27%;
     z-index: 500;
     font-size: 22px;
+}
+
+.inline-photo {
+    width: 100%;
+    position: absolute;
+    top: 80%;
 }
 
 .caption {
@@ -60,21 +66,26 @@
     text-align: right;
     position: absolute;
     top: 15%;
-    left: 60%;
-    width: 35%;
-    height: 40%;
+    width: 70%;
+    min-height: 220px;
     background-color: #fffb13;
     padding-top: 25px;
     padding-left: 35px;
     padding-right: 25px;
     z-index: 10;
+    transform: translateZ(-1px) scale(1.04);
 }
 
 .panel {
-    height: 100vh;
-    width: 100vw;
+    min-height: 800px;
+    width: 100%;
     padding: 50px;
     position: relative;
+}
+
+.center {
+    left: 30%;
+    top: 30%;
 }
 
 @media (max-width: 993px) {
