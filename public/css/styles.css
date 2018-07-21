@@ -1,107 +1,69 @@
+.top-content {
+    position: absolute;
+    height: 400px;
+    width: 590px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-image: url("../img/mafilm.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .first-name {
-    max-width: 15%;
-    padding: 25px;
-    position: fixed;
-    top: 10%;
-    left: 15%;
+    width: 100px;
+    position: absolute;
+    top: -50px;
+    left: -10px;
     z-index: 1000;
 }
 
 .last-name {
-    max-width: 40%;
-    padding: 25px;
-    position: fixed;
-    top: 20%;
-    left: 15%;
+    width: 305px;
+    position: absolute;
+    top: -10px;
+    left: -45px;
     z-index: 1000;
 }
 
-.ma {
-    max-width: 50%;
+.texture-one {
+    background-image: url("../img/tex1.png");
+    width: 400px;
+    height: 550px;
+    background-size: contain;
     position: absolute;
-    left: 25%;
-    top: 27%;
-    z-index: 500;
-    font-size: 22px;
+    top: 700px;
+    left: 15px;
+    opacity: 0.2;
 }
 
-.inline-photo {
-    width: 100%;
+.texture-two {
+    background-image: url("../img/tex2.png");
+    width: 400px;
+    height: 550px;
+    background-size: contain;
     position: absolute;
-    top: 80%;
-}
-
-.caption {
-    max-width: 7%;
-    position: absolute;
-    top: 65%;
-    left: 65%;
-    z-index: 1000;
-}
-
-.random {
-    position: fixed;
-    top: 15px;
+    top: 1400px;
     right: 15px;
+    transform: translateX(-50%);
+    opacity: 0.2;
+}
+
+.disclaimer {
+    transform: rotate(90deg);
+    position: fixed;
+    top: 50%;
+    right: -90px;
 }
 
 .right-menu {
     text-align: right;
-    padding: 10px;
-    width: 15%;
-    height: 25%;
+    padding: 65px 10px 10px 10px;
+    width: 150px;
+    height: 170px;
     background-color: #fffb13;
-    z-index: 20;
+    z-index: -20;
     position: absolute;
-    top: 20%;
-    left: 70%;
-}
-
-.article-caption-container {
-    padding: 25px;
-    height: 200px;
-}
-
-.article-caption {
-    text-align: right;
-    position: absolute;
-    top: 15%;
-    width: 70%;
-    min-height: 220px;
-    background-color: #fffb13;
-    padding-top: 25px;
-    padding-left: 35px;
-    padding-right: 25px;
-    z-index: 10;
-    transform: translateZ(-1px) scale(1.04);
-}
-
-.panel {
-    min-height: 800px;
-    width: 100%;
-    padding: 50px;
-    position: relative;
-}
-
-.center {
-    left: 30%;
-    top: 30%;
-}
-
-@media (max-width: 993px) {
-    .first-name {
-        max-width: 18%;
-        left: 35px;
-        top: 0;
-    }
-    .last-name {
-        max-width: 50%;
-        left: 35px;
-        top: 65px;
-    }
-    .ma {
-        max-width: 80%;
-        top: 180px;
-        transform: translate(-50%, 0);
-    }
+    bottom: -50px;
+    right: -65px;
 }
