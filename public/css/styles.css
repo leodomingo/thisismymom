@@ -1,7 +1,7 @@
 .top-content {
     position: absolute;
-    height: 400px;
-    width: 590px;
+    height: 31em;
+    width: 46em;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -33,7 +33,7 @@
     background-size: contain;
     position: absolute;
     top: 700px;
-    left: 15px;
+    left: 50px;
     opacity: 0.2;
 }
 
