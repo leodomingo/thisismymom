@@ -67,3 +67,40 @@
     bottom: -50px;
     right: -65px;
 }
+
+@media only screen and (max-width: 768px) {
+    .first-name {
+        margin-top: 160px;
+        display: block;
+        width: 25%;
+        top: 0;
+        left: 0;
+        position: static;
+    }
+    .last-name {
+        display: block;
+        width: 65%;
+        top: 0;
+        left: 0;
+        position: static;
+    }
+    .top-content {
+        width: 100%;
+        min-height: 350px;
+        height: auto;
+        position: static;
+        transform: none;
+    }
+    .container-fluid {
+        margin: 0;
+    }
+    .disclaimer {
+        top: 55%;
+        right: -105px;
+    }
+    .right-menu {
+        position: relative;
+        bottom: 60px;
+        right: -20px;
+    }
+}

@@ -1,10 +1,8 @@
 $(function() {
     const buttonArray = [$("#writing-button"), $("#code-button")];
     const sectionArray = [$("#write-blurb"), $("#code-blurb")];
-    const items = $("img, .draggable");
 
 
-    $(".draggable").draggable();
     $('.right-menu').velocity({
         properties: { scale: 1.02 },
         options: { duration: 100, loop: true, delay: 1000 }
