@@ -1,17 +1,33 @@
 {
-    "name": "athlete-recruitment-data",
+    "name": "leo-dominguez",
     "version": "1.0.0",
-    "description": "visualization for UVA athlete hometowns",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+    "description": "a site about leo",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leodomingo/thisismymom"
     },
-    "author": "leo dominguez",
-    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.24.5",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "css-loader": "^0.28.11",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.15.1",
+        "webpack-cli": "^3.0.8",
+        "webpack-dev-server": "^3.1.4"
+    },
+    "scripts": {
+        "dev": "webpack-dev-server",
+        "start": " webpack --config webpack.config.js && npm run dev"
+    },
     "dependencies": {
-        "bootstrap": "^3.3.7",
-        "express": "^4.14.0",
-        "morgan": "^1.7.0",
-        "velocity": "^0.7.2"
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-register": "^6.26.0",
+        "express": "^4.16.3",
+        "lodash": "^4.17.10",
+        "path": "^0.12.7"
     }
 }

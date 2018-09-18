@@ -1,0 +1,146 @@
+{
+    "id": "5a6a62bae4b0c802e327762b",
+    "title": "Retropod",
+    "subTitle": "The past, rediscovered",
+    "showTitle": false,
+    "slug": "retropod",
+    "links": [{
+        "url": "https://www.amazon.com/dp/B0792NNMB1/",
+        "title": "Alexa Flash Briefing"
+    }, {
+        "url": "https://itunes.apple.com/us/podcast/retropod/id1342503128?mt=2&at=1001lvyS&ct=retro_wp_showpage",
+        "title": "Apple Podcasts"
+    }, {
+        "url": "https://www.stitcher.com/s?fid=165700&refid=stpr",
+        "title": "Stitcher"
+    }, {
+        "url": "https://radiopublic.com/retropod-GbzbQ5",
+        "title": "RadioPublic"
+    }, {
+        "url": "https://goo.gl/app/playmusic?ibi=com.google.PlayMusic&ius=googleplaymusic&link=https://play.google.com/music/m/Ihehhz4x4naishm4ai3qpt7kr3e",
+        "title": "Google Play"
+    }, {
+        "url": "https://podcast.posttv.com/itunes/retropod.xml",
+        "title": "RSS"
+    }],
+    "link": "https://www.washingtonpost.com/podcasts/retropod",
+    "copyright": "The Washington Post",
+    "description": "Retropod is a show for history lovers, featuring stories about the past, rediscovered. Reporter Mike Rosenwald introduces you to history’s most colorful characters - forgotten heroes, overlooked villains, dreamers, explorers, world changers. Available every weekday morning.",
+    "shortDescription": "Retropod is a show for history lovers, featuring stories about the past, rediscovered. Reporter Mike Rosenwald introduces you to history’s most colorful characters - forgotten heroes, overlooked villains, dreamers, explorers, world changers.",
+    "richDescription": "<div>\"Retropod\" is a show for history lovers, featuring stories about the past, rediscovered. Reporter Mike Rosenwald introduces you to history’s most colorful characters - forgotten heroes, overlooked villains, dreamers, explorers, world changers. Available every weekday morning on Amazon Echo, Google Home and your favorite podcast app</div><div><br></div><div><span style=\"background-color: rgb(255, 255, 255);\">Check out even more stories on <a href=\"https://www.washingtonpost.com/news/retropolis/\">the Retropolis blog</a>.</span></div><div><br></div><div><b>Set up on Amazon Echo:</b></div><div>Enable the Flash Briefing <a href=\"https://www.amazon.com/dp/B0792NNMB1/\">in the Amazon Skill store</a> or search for \"The Washington Post\" in the Skill section of your Alexa app. Then ask, \"Alexa, what's my Flash Briefing?\" or \"Alexa, what's the news?</div><div><br></div><div><b>Set up on Google Home:</b></div><div><span style=\"background-color: rgb(255, 255, 255);\">In the Google Home app, select Menu &gt; More Settings &gt; News &gt; Add news sources. Find and enable \"Retropod\" in the General section. Then ask, \"Okay Google, what's in the news?\"</span></div>",
+    "author": {
+        "name": "The Washington Post",
+        "email": "jessica.stahl@washpost.com",
+        "role": null,
+        "twitter": null
+    },
+    "color": "#e76030",
+    "offsetColor": "white",
+    "viewType": "grid_reverse",
+    "podcastType": "episodic",
+    "oembed": "<div class=\"poda-player-container\" data-org=\"washpost\" data-series=\"retropod\"><script defer src=\"https://d2lhouwh993x2g.cloudfront.net/prod/loader.js\"></script></div>",
+    "contributors": [{
+        "name": "Mike Rosenwald",
+        "email": null,
+        "role": "Hosted by",
+        "twitter": "@mikerosenwald"
+    }, {
+        "name": "Anne Li",
+        "email": null,
+        "role": "Produced by",
+        "twitter": "@annemiaoli"
+    }, {
+        "name": "Gwen Kevaral for The Washington Post",
+        "email": null,
+        "role": "Artwork by",
+        "twitter": null
+    }],
+    "appleCategory": ["History"],
+    "customFields": null,
+    "images": {
+        "heroImage": {
+            "url": "https://podcast.posttv.com/series/20180126/t_1516999889454_name_Retropod_Series_Hero.jpg",
+            "sourceFile": {
+                "id": "5a6b94d1e4b0c802e3277653",
+                "createdAt": 1516999889469,
+                "bucket": "posttv-podcast-prod",
+                "key": "series/20180126/t_1516999889454_name_Retropod_Series_Hero.jpg",
+                "originalName": "Retropod_Series_Hero.jpg",
+                "contentType": null,
+                "fileSize": 323398
+            },
+            "height": 0,
+            "width": 0
+        },
+        "socialImage": {
+            "url": "https://podcast.posttv.com/series/20180611/t_1528744081233_name_t_1516999899832_name_Retropod_Series_Social1.jpg",
+            "sourceFile": {
+                "id": "5b1ec891e4b0d344e541d54e",
+                "createdAt": 1528744081279,
+                "bucket": "posttv-podcast-prod",
+                "key": "series/20180611/t_1528744081233_name_t_1516999899832_name_Retropod_Series_Social1.jpg",
+                "originalName": "t_1516999899832_name_Retropod_Series_Social1.jpg",
+                "contentType": null,
+                "fileSize": 740836
+            },
+            "height": 1300,
+            "width": 2400
+        },
+        "coverImage": {
+            "url": "https://podcast.posttv.com/series/20180611/t_1528744089259_name_t_1516999882146_name_Retropod_Series_Cover.jpg",
+            "sourceFile": {
+                "id": "5b1ec899e4b0d344e541d54f",
+                "createdAt": 1528744089282,
+                "bucket": "posttv-podcast-prod",
+                "key": "series/20180611/t_1528744089259_name_t_1516999882146_name_Retropod_Series_Cover.jpg",
+                "originalName": "t_1516999882146_name_Retropod_Series_Cover.jpg",
+                "contentType": null,
+                "fileSize": 1327100
+            },
+            "height": 3000,
+            "width": 3000
+        },
+        "bannerImage": {
+            "url": "https://podcast.posttv.com/series/20180126/t_1516999914911_name_Retropod_Series_SmallBanner2.jpg",
+            "sourceFile": {
+                "id": "5a6b94eae4b0fac9666abd50",
+                "createdAt": 1516999914925,
+                "bucket": "posttv-podcast-prod",
+                "key": "series/20180126/t_1516999914911_name_Retropod_Series_SmallBanner2.jpg",
+                "originalName": "Retropod_Series_SmallBanner2.jpg",
+                "contentType": null,
+                "fileSize": 66467
+            },
+            "height": 0,
+            "width": 0
+        }
+    },
+    "completed": false,
+    "publishPage": true,
+    "subscriptionLinks": {
+        "alexa": "https://www.amazon.com/dp/B0792NNMB1/",
+        "applePodcasts": "https://itunes.apple.com/us/podcast/retropod/id1342503128?mt=2&at=1001lvyS&ct=retro_wp_showpage",
+        "googlePlay": "https://goo.gl/app/playmusic?ibi=com.google.PlayMusic&ius=googleplaymusic&link=https://play.google.com/music/m/Ihehhz4x4naishm4ai3qpt7kr3e",
+        "spotify": "https://open.spotify.com/show/3FU0biKiocCzsiZ5eI2GzQ?si=Sdt1j7uiTVWtBNa4R-Jeig",
+        "stitcher": "https://www.stitcher.com/s?fid=165700&refid=stpr",
+        "tuneIn": null,
+        "radioPublic": "https://radiopublic.com/retropod-GbzbQ5",
+        "rss": "https://podcast.posttv.com/itunes/retropod.xml",
+        "iheartRadio": null
+    },
+    "iTunesFeedUrl": "https://podcast.posttv.com/itunes/retropod.xml",
+    "googleFeedUrl": "https://podcast.posttv.com/google/retropod.rss",
+    "alexaFeedUrl": "https://podcast.posttv.com/alexa/retropod.json",
+    "pageTitle": "Retropod: A Washington Post podcast about the past, rediscovered",
+    "keywords": ["history",
+        "podcast", "mike rosenwald", "retropolis", "past", "education"
+    ],
+    "socialTitle": "Retropod: A show about the past, rediscovered",
+    "socialDescription": "Reporter Mike Rosenwald introduces you to history’s most colorful characters - forgotten heroes, overlooked villains, dreamers, explorers, world changers.",
+    "omnitureAuthor": "Mike Rosenwald",
+    "omniturePageName": "local:podcasts/retropod",
+    "omnitureChannel": "local",
+    "canonicalUrl": "https://www.washingtonpost.com/podcasts/retropod",
+    "newsBriefFeedUrl": "https://podcast.posttv.com/siri/retropod.xml",
+    "canonicalFeedURL": "https://podcast.posttv.com/itunes/retropod.xml"
+}

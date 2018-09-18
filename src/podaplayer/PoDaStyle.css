@@ -1,0 +1,537 @@
+.podcast-series>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.subscription-overlay-link:hover {
+    color: white;
+}
+
+a.subscription-overlay-button:hover {
+    color: black;
+}
+
+.poda-player-container {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    border: solid 1px #e9e9e9;
+    border-bottom: solid 2px #d5d5d5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.poda-player-container.mobile {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    position: relative;
+}
+
+.podcast-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    display: inline-block;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    z-index: 90;
+}
+
+.podcast-image {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.podcast-mobile-cover-image {
+    display: none;
+    width: 100px !important;
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    right: 17px;
+}
+
+.podcast-audio-container {
+    height: 100%;
+    padding: 0;
+    display: inline-block;
+    width: calc(100% - 230px);
+    position: absolute;
+    top: 0;
+    left: 230px;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+}
+
+.podcast-audio-container.mobile {
+    height: auto;
+    min-height: 0;
+    display: block;
+    width: 100%;
+    position: static;
+}
+
+.podcast-audio-container.mobile>.podcast-audio {
+    position: static;
+}
+
+.podcast-audio {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    background-color: #f8f8f8;
+}
+
+.subscription-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1A1a1a;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.subscription-overlay.mobile {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.subscription-overlay.mobile>.subscription-overlay-title {
+    left: 30px;
+}
+
+.subscription-overlay-title {
+    font: normal 16px "FranklinITCProLight", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 15%;
+    color: white;
+    max-width: 250px;
+}
+
+.play-bar {
+    height: 100px;
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    width: 100%;
+}
+
+.play-bar.mobile {
+    position: relative;
+    top: 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    bottom: auto;
+}
+
+.play-bar-screen {
+    height: 104px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    height: 18px;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    border-top: solid 1px #e9e9e9;
+}
+
+.progress-bar-container.mobile {
+    height: 24px;
+}
+
+.progress-bar-container.mobile>.podcast-progress-bar>.podcast-progress-point {
+    width: 24px;
+    height: 24px;
+    top: 0;
+}
+
+.podcast-progress-bar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    background-color: gray;
+    border-radius: 0px 20px 20px 0;
+    z-index: 15;
+}
+
+.podcast-progress-point {
+    height: 19px;
+    width: 19px;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: -1px;
+    border-radius: 100%;
+    border: solid 1px #e9e9e9;
+    z-index: 50;
+}
+
+.play-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 55px;
+    width: 55px;
+    border: solid white 2px;
+    background-color: white;
+    border-radius: 100%;
+    transition: all 1s ease;
+    -webkit-transition: all 0.2s ease;
+    text-align: center;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.skip-back-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    color: #e9e9e9;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.skip-forward-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    color: #e9e9e9;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.play-bar>.skip-back-button {
+    left: calc(20%);
+}
+
+.play-bar>.skip-forward-button {
+    right: calc(20%);
+}
+
+.play-bar.mobile>.skip-back-button {
+    left: 20%;
+}
+
+.play-bar.mobile>.skip-forward-button {
+    right: 20%;
+}
+
+.skip-button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
+.skip-back-button>.skip-button-text {
+    transform: translate(-42%, -45%);
+}
+
+.skip-forward-button>.skip-button-text {
+    transform: translate(-58%, -45%)
+}
+
+.play-button-container:hover .play-button {
+    font-size: 28px;
+}
+
+.play-button-container:hover .pause-button {
+    font-size: 28px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+}
+
+.pause-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+}
+
+.skip-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.podcast-duration {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font: normal 16px "FranklinITCProLight", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #222;
+    letter-spacing: 0.25px;
+}
+
+.podcast-elapsed {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font: normal 16px "FranklinITCProLight", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #222;
+    letter-spacing: 0.25px;
+}
+
+.buffer-bar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #eee;
+    z-index: 8;
+}
+
+.podcast-series {
+    font: normal 16px "FranklinITCProBold", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 115px);
+    z-index: 15;
+}
+
+.podcast-series.mobile {
+    position: relative;
+    font: normal 16px "FranklinITCProBold", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    left: 20px;
+    top: 15px;
+}
+
+.podcast-title-container {
+    position: relative;
+    top: 5px;
+    height: auto;
+    padding: 20px;
+}
+
+.podcast-title-container.mobile {
+    height: auto;
+}
+
+.series-link {
+    display: inline;
+}
+
+.podcast-title {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 95%;
+    display: block;
+    font: normal 20px "FranklinITCProLight", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding-right: 30px;
+}
+
+.podcast-title.mobile {
+    font-size: 18px;
+    line-height: 23px;
+    height: auto;
+    min-height: 90px;
+    position: static;
+    width: calc( 100% - 115px);
+    display: inline-block;
+    padding: 0;
+}
+
+.open-subscription-overlay-button {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    font: normal 16px "FranklinITCProBold", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: black;
+    border: solid 1px #dcdcdc;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 8px;
+}
+
+.open-subscription-overlay-button.mobile {
+    width: calc(100% - 30px);
+    position: relative;
+    right: auto;
+    left: 15px;
+    text-align: center;
+    top: 15px;
+}
+
+.subscription-overlay-exit {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.subscription-overlay-link-container {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 15%;
+    display: block;
+}
+
+.subscription-overlay-link-container.mobile {
+    height: auto;
+    width: 95%;
+    top: 80px;
+    left: 30px;
+    transform: none;
+}
+
+#googlePlay {
+    padding-left: 1px;
+}
+
+.subscription-overlay-link {
+    display: inline-block;
+    color: white;
+    font: normal 16px "FranklinITCProBold", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    height: 45px;
+    width: 25%;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.subscription-overlay-link-container.mobile>.subscription-overlay-link {
+    height: 45px;
+    width: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+    .podcast-audio {
+        margin-bottom: 15px;
+    }
+    .subscription-overlay-link-container {
+        left: 30px;
+        transform: none;
+    }
+    .subscription-overlay-title {
+        left: 30px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .podcast-duration {
+        right: 15px;
+    }
+    .podcast-elapsed {
+        left: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .subscription-overlay-link-container.mobile {
+        text-align: left;
+        top: 80px;
+        width: 100%;
+        left: 30px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .subscription-overlay-link-container.mobile {
+        top: 45px;
+        text-align: center;
+        left: 0;
+    }
+    .subscription-overlay-link-container.mobile>.subscription-overlay-link {
+        height: 25px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .podcast-mobile-cover-image {
+        display: none !important;
+    }
+    .podcast-title.mobile {
+        width: 100%;
+        min-height: auto;
+    }
+    .play-button-container {
+        top: 40%;
+    }
+    .play-bar.mobile>.skip-back-button {
+        top: 40%;
+        left: 20%;
+    }
+    .play-bar.mobile>.skip-forward-button {
+        top: 40%;
+    }
+    .skip-button {
+        font-size: 40px;
+    }
+    .podcast-duration {
+        top: 75%;
+        font-size: 13px;
+    }
+    .podcast-elapsed {
+        top: 75%;
+        font-size: 13px;
+    }
+}
