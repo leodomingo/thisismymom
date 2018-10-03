@@ -1,3 +1,4 @@
 $(function() {
     $diclaimer = $(".disclaimer");
+
 });
