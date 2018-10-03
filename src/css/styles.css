@@ -81,6 +81,11 @@
     right: -65px;
 }
 
+.right-menu>a {
+    width: 100%;
+    display: block;
+}
+
 .days-since-last-incident {
     color: red;
 }
