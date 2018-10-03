@@ -89,6 +89,7 @@
 
 @media only screen and (max-width: 768px) {
     .first-name {
+        margin-top: 15px;
         display: block;
         width: 25%;
         top: 0;
@@ -104,10 +105,13 @@
     }
     .top-content {
         width: 100%;
-        min-height: 350px;
+        min-height: 150px;
         height: auto;
         position: static;
         transform: none;
+    }
+    .top-row {
+        min-height: 25em;
     }
     .container-fluid {
         margin: 0;
