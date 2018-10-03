@@ -9,9 +9,6 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    background-image: url("../img/mafilm.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .first-name {
@@ -28,6 +25,11 @@
     top: -10px;
     left: -45px;
     z-index: 1000;
+}
+
+.ma-film {
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .texture-one {
