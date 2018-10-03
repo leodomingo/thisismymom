@@ -74,7 +74,7 @@ export function PODA_BOOT(org) {
     }
 
     function getImages(podcast, series, player_container) {
-        var coverImage = "https://www.washingtonpost.com/resizer/8rAXBgb_JkqRdzbF1QckSslfuPY=/600x600/podcast.posttv.com/series/20180716/t_1531710060137_name_rpod_tubman.jpg"
+        var coverImage = "https://podcast.posttv.com/series/20180716/t_1531710060137_name_rpod_tubman.jpg";
         var playerTemplate = PODA_BUILD(podcast, series, coverImage, org);
         player_container.innerHTML = playerTemplate;
         if (window_width < 528) {

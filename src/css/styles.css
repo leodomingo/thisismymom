@@ -85,7 +85,6 @@
 
 @media only screen and (max-width: 768px) {
     .first-name {
-        margin-top: 160px;
         display: block;
         width: 25%;
         top: 0;
