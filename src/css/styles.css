@@ -2,6 +2,10 @@
     min-height: 45em;
 }
 
+.poda-player-container {
+    z-index: 800;
+}
+
 .top-content {
     position: absolute;
     height: 31em;
@@ -49,7 +53,7 @@
     height: 550px;
     background-size: contain;
     position: absolute;
-    top: 1400px;
+    top: 1000px;
     right: 15px;
     transform: translateX(-50%);
     opacity: 0.2;
