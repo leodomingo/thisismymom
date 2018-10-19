@@ -1,5 +1,6 @@
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const express = require('express');
 
 module.exports = {
     entry: {
@@ -31,6 +32,16 @@ module.exports = {
         net: 'empty'
     },
     devServer: {
+        before: function(app) {
+            app.use(express.static(path.join(__dirname, 'public')));
+
+            app.get('/akash', function(req, res) {
+                res.sendFile(path.join(__dirname, 'akash.html'));
+            });
+            app.get('/chivo-guisado', function(req, res) {
+                res.sendFile(path.join(__dirname, 'chivo-guisado.html'));
+            });
+        },
         historyApiFallback: {
             index: '/dist/index.html'
         }

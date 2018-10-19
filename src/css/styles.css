@@ -31,6 +31,28 @@
     z-index: 1000;
 }
 
+.chivo {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 100px;
+    position: relative;
+    top: 105px;
+    left: 300px;
+    z-index: 1000;
+}
+
+.guisado {
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 140px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    z-index: 1000;
+}
+
 .ma-film {
     max-width: 90%;
     max-height: 90%;
