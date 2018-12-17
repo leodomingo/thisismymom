@@ -204,7 +204,7 @@
 }
 
 #cousinphoto {
-    background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/green_background.jpg");
+    background-image: url("/src/img/green_background.jpg");
 }
 
 p {
