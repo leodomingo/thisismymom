@@ -112,6 +112,10 @@
     color: red;
 }
 
+.days-until-incident {
+    color: red;
+}
+
 .blurb {
     padding: 25px 0;
     z-index: 300;
