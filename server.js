@@ -11,7 +11,7 @@ app.get('/chivo-guisado', function(req, res) {
     res.sendFile(__dirname + '/chivo-guisado.html');
 });
 app.get('/pictures', function(req, res) {
-    res.sendFile(__dirname + 'photos.html');
+    res.sendFile(__dirname + '/photos.html');
 });
 
 app.listen(process.env.PORT || 3000, function() {
