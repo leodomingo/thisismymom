@@ -41,6 +41,9 @@ module.exports = {
             app.get('/chivo-guisado', function(req, res) {
                 res.sendFile(path.join(__dirname, 'chivo-guisado.html'));
             });
+            app.get('/pictures', function(req, res) {
+                res.sendFile(path.join(__dirname, 'photos.html'));
+            });
         },
         historyApiFallback: {
             index: '/dist/index.html'

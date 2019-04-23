@@ -87,9 +87,49 @@
 .disclaimer {
     transform: rotate(90deg);
     position: fixed;
-    top: 50%;
-    right: -90px;
+    top: 40%;
+    right: -140px;
     z-index: 500;
+    -webkit-animation: updown 11s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: updown 11s;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.group-caption {
+    text-align: right;
+    background-color: white;
+    color: black;
+    padding-right: 5%;
+    height: 35px;
+    width: 250px;
+    background-color: #fffb13;
+    font-weight: 800;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes updown {
+    from {
+        top: -135px;
+    }
+    to {
+        top: 850px;
+    }
+}
+
+@keyframes updown {
+    from {
+        top: -315px;
+    }
+    to {
+        top: 850px;
+    }
 }
 
 .right-menu {
@@ -108,6 +148,22 @@
     display: block;
 }
 
+.photo-menu {
+    text-align: right;
+    padding: 65px 10px 10px 10px;
+    width: 150px;
+    height: 170px;
+    background-color: #fffb13;
+    position: fixed;
+    top: 50px;
+    left: 45px;
+}
+
+.photo-menu>a {
+    width: 100%;
+    display: block;
+}
+
 .days-since-last-incident {
     color: red;
 }
@@ -116,9 +172,44 @@
     color: red;
 }
 
+.image-group-container {
+    overflow: scroll;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.big-image-group-container {
+    width: 4000px;
+    height: 600px;
+    overflow: scroll;
+}
+
+.solo-photo {
+    max-height: 100%;
+    max-width: 75%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: solid black 15px;
+}
+
+.col-md-12 {
+    margin-bottom: 70px;
+}
+
+.trio-photo {
+    max-height: 100%;
+    padding-top: 45px;
+}
+
 .blurb {
     padding: 25px 0;
     z-index: 300;
+}
+
+.port-caption {
+    position: fixed;
+    top: 50%;
+    font-size: 28px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -152,7 +243,7 @@
     }
     .disclaimer {
         top: 55%;
-        right: -105px;
+        right: -125px;
     }
     .right-menu {
         position: relative;
@@ -476,6 +567,20 @@ p:last-child {
     #murphyPhoto {
         background-size: cover;
         color: white;
+    }
+    .solo-photo {
+        max-height: 100%;
+        max-width: 100%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        border: solid black 15px;
+    }
+    .right-rail {
+        margin-top: 160px;
+    }
+    .photo-menu {
+        top: -15px;
+        left: -15px;
     }
 }
 
