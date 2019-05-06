@@ -13,6 +13,10 @@ app.get('/chivo-guisado', function(req, res) {
 app.get('/pictures', function(req, res) {
     res.sendFile(__dirname + '/photos.html');
 });
+app.get('/pay-the-players', function(req, res) {
+    res.sendFile(__dirname + '/mmm.html');
+
+})
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('Example app listening on port 3000!');

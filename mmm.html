@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+
+<script type="module">
+  // Load the Observable runtime and inspector.
+  import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
+
+  // Your notebook, compiled as an ES module.
+  import notebook from "https://api.observablehq.com/@leohdear/vega-lite-scatterplot.js";
+
+
+  // Load the notebook, observing its cells with a default Inspector
+  // that simply renders the value of each cell into the provided DOM node.
+ var container = document.getElementsByClassName("row")[0];
+
+  Runtime.load(notebook, (cell) => {
+      console.log(cell.inputs);
+  var div = document.createElement("div");
+  if (cell.inputs[0] == "md"){
+  div.className += " col-md-6 offset-md-3";
+
+  }else{
+      div.className += " col-md-10 offset-md-1";
+  }
+  container.appendChild(div);
+  return new Inspector(div);
+});
+</script>
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-10 offset-md-1">
+            </div>
+        </div>
+    </div>
+</body>

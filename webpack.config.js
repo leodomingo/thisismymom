@@ -44,6 +44,9 @@ module.exports = {
             app.get('/pictures', function(req, res) {
                 res.sendFile(path.join(__dirname, 'photos.html'));
             });
+            app.get('/pay-the-players', function(req, res) {
+                res.sendFile(path.join(__dirname, 'mmm.html'));
+            });
         },
         historyApiFallback: {
             index: '/dist/index.html'
