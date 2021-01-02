@@ -3,15 +3,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const express = require('express');
 
 module.exports = {
-    entry: {
-        boot: './src/podaplayer/PoDaBoot.js',
-        loader: './src/podaplayer/PoDaLoaderV1.js'
-
-    },
-    output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
-    },
     module: {
         rules: [{
             test: /\.js?$/,
@@ -32,20 +23,23 @@ module.exports = {
         net: 'empty'
     },
     devServer: {
-        before: function(app) {
+        before: function (app) {
             app.use(express.static(path.join(__dirname, 'public')));
 
-            app.get('/akash', function(req, res) {
+            app.get('/akash', function (req, res) {
                 res.sendFile(path.join(__dirname, 'akash.html'));
             });
-            app.get('/chivo-guisado', function(req, res) {
+            app.get('/chivo-guisado', function (req, res) {
                 res.sendFile(path.join(__dirname, 'chivo-guisado.html'));
             });
-            app.get('/pictures', function(req, res) {
+            app.get('/pictures', function (req, res) {
                 res.sendFile(path.join(__dirname, 'photos.html'));
             });
-            app.get('/pay-the-players', function(req, res) {
+            app.get('/pay-the-players', function (req, res) {
                 res.sendFile(path.join(__dirname, 'mmm.html'));
+            });
+            app.get('/wallet', function (req, res) {
+                res.sendFile(path.join(__dirname, 'wallet.html'));
             });
         },
         historyApiFallback: {

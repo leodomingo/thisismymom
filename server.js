@@ -17,6 +17,10 @@ app.get('/pay-the-players', function(req, res) {
     res.sendFile(__dirname + '/mmm.html');
 
 })
+app.get('/wallet', function(req, res) {
+    res.sendFile(__dirname + '/wallet.html');
+
+})
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('Example app listening on port 3000!');
